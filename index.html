@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="initGame()">
+    <div class="smiley" onclick="initGame()"></div>
+    <table class="game-board">
+      <tbody></tbody>
+    </table>
+    <div class="health-bar"></div>
+    <div class="drop-menu">
+      <a onclick="changeDiff(1)" class="button">Easy</a>
+      <a onclick="changeDiff(2)" class="button">Medium</a>
+      <a onclick="changeDiff(3)" class="button">Hard</a>
+      <a onclick="changeDiff(4)" class="button">OVERKILL</a>
+    </div>
+    <div class="timer"></div>
+    <footer class="john-hancock">Ron Shmuel Kotigaro</footer>
+    <script src="/js/game.js"></script>
+    <script src="/js/utils.js"></script>
+  </body>
+</html>
